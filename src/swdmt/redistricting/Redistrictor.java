@@ -31,7 +31,7 @@ public final class Redistrictor implements java.io.Serializable {
      * Establishes a specific region as associated with
      * the redistrictor.
      * @param theRegion region associated with this redistrictor
-     * @throws Exception if the region is null
+     * @throws IllegalArgumentException if the region is null
      */
     public Redistrictor(final Region theRegion) {
         if (theRegion == null) {
