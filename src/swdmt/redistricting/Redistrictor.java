@@ -31,10 +31,10 @@ public final class Redistrictor implements java.io.Serializable {
      * Establishes a specific region as associated with
      * the redistrictor.
      * @param theRegion region associated with this redistrictor
-     * @throws illegalArgumentException if the region is null
+     * @throws Exception if the region is null
      */
     public Redistrictor(final Region theRegion) {
-        if (null == theRegion) {
+        if (theRegion == null) {
             throw new IllegalArgumentException(
                     "Cannot associate null region with new Redistrictor");
         }
